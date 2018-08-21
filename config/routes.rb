@@ -7,7 +7,7 @@ Rails.application.routes.draw do
    post '/logout' => 'sessions#destroy'
 
   #  get '/secret' => 'secrets#show'
-   resources :secret
+   resources :secrets, only: [:show]
 
 
 
