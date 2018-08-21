@@ -5,7 +5,6 @@ class SecretsController < ApplicationController
   end
 
   def show
-    # render "/secrets/secret_page"
   end
 
 
