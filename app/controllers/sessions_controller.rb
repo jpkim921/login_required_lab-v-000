@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       # redirect_to controller: 'sessions', action: 'new'
     elsif params[:name]
       session[:name] = params[:name]
-      redirect_to "/"
+      redirect_to root_path
     end
   end
 
