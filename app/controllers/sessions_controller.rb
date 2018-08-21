@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
   def create
     if params[:name].nil? || params[:name].empty?
-      redirect_to "/sessions/new"
+      redirect_to "/login"
       # redirect_to controller: 'sessions', action: 'new'
     elsif params[:name]
       session[:name] = params[:name]
